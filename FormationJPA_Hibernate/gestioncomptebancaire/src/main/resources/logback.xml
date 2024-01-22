@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+	<!-- Configuration de l'appender pour la console -->
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<!-- Configuration de l'appender pour le fichier -->
+	<!-- <appender name="FILE" class="ch.qos.logback.core.FileAppender"> <file>app.log</file> 
+		Spécifiez le chemin et le nom du fichier <encoder> <pattern>%d{HH:mm:ss.SSS} 
+		[%thread] %-5level %logger{36} - %msg%n </pattern> </encoder> </appender> -->
+
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>app2.log</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>app2-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<!-- each file should be at most 10MB, keep 5 days worth of history, but 
+				at most 2GB -->
+			<maxFileSize>10MB</maxFileSize>
+			<maxHistory>5</maxHistory>
+			<totalSizeCap>2GB</totalSizeCap>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} %-5level %-5relative ---
+				[%thread] %logger{35} : %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<!-- Configuration du logger racine -->
+	<root level="INFO">
+		<appender-ref ref="STDOUT" /> <!-- Utilisez l'appender console pour le logger racine -->
+		<appender-ref ref="FILE" /> <!-- Utilisez l'appender fichier pour le logger racine -->
+	</root>
+
+
+</configuration>

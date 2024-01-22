@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0"
+             xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+>
+    <persistence-unit name="gestionCB_mysql" transaction-type="RESOURCE_LOCAL">
+    
+    <!--On spécifie l'implementation (Provider) utilisé (ORM : Hibernate)-->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+
+		<!--On indique les classes des entités à Mapper  -->
+        <class>fr.dawan.gestioncomptebancaire.avecORM.entities.Utilisateur</class>
+
+        <properties>
+        	<!-- 1. Definir les propriétés de connexion JDBC -->
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gestioncomptebancaire2" />
+            <property name="jakarta.persistence.jdbc.user" value="root" />
+            <property name="jakarta.persistence.jdbc.password" value="" />
+
+			<!--2. Definir les propriétés Hibernate -->
+			<!-- Personnaliser le processus de génération du schéma de la base de données par Hibernate -->
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <!--Specifier le dialecte SQL correspondant au systeme de base de gestion de base de données utilisé -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+            <!-- Parametrer l'affichage des requêtes SQL générées par Hibernate dans la console -->
+            <property name="hibernate.show_sql" value="true" />
+            <!-- Formater les requêtes SQL générées -->
+			<property name="hibernate.format_sql" value="true" />
+        </properties>
+    </persistence-unit>
+
+</persistence>

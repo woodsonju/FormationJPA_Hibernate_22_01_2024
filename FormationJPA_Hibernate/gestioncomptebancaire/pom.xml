@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.dawan</groupId>
+  <artifactId>gestioncomptebancaire</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!--Type d'arhchive à generer-->
+  <packaging>jar</packaging>
+  
+  <!-- Propriétés-->
+  <properties>
+	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+	  <!-- Compile avec la version 17-->
+	  <maven.compiler.source>17</maven.compiler.source>
+	  <!-- Execute(JVM) sur un environnement d'execution Java 17-->
+	  <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+  
+  
+  <dependencies>
+	  
+	  <!-- Connecteur JDBC pour MYSQL-->
+	  <dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.33</version>
+	  </dependency>
+	  
+	      <!-- Journalisation-->
+                <dependency>
+                        <groupId>ch.qos.logback</groupId>
+                        <artifactId>logback-core</artifactId>
+                        <version>1.4.14</version>
+                </dependency>
+
+                <dependency>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-api</artifactId>
+                        <version>2.0.9</version>
+                </dependency>
+
+                <dependency>
+                        <groupId>ch.qos.logback</groupId>
+                        <artifactId>logback-classic</artifactId>
+                        <version>1.4.14</version>
+                </dependency>
+                
+                 <!-- Framework ORM ((Object-Relational Mapping)-->
+                <dependency>
+                        <groupId>org.hibernate</groupId>
+                        <artifactId>hibernate-core</artifactId>
+                        <version>6.4.1.Final</version>
+                </dependency>
+	  
+  </dependencies>
+  
+</project>

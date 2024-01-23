@@ -1,0 +1,360 @@
+2024-01-22 14:35:18.476 ERROR 332   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 14:38:45.621 ERROR 351   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 14:41:49.606 ERROR 317   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 14:46:48.427 ERROR 321   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 14:48:37.188 ERROR 336   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 14:48:49.698 ERROR 310   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 14:49:17.691 ERROR 334   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 14:52:43.518 ERROR 324   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Erreur lors de la connexion à la base de données.
+java.sql.SQLException: Accès refusé pour l'utilisateur: 'root '@'@localhost' (mot de passe: NON)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at fr.dawan.gestioncomptebancaire.sansORM.dao.ConnexionBDD.<clinit>(ConnexionBDD.java:56)
+	at fr.dawan.gestioncomptebancaire.sansORM.ConnexionBDDTest.testConnexionBDD(ConnexionBDDTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+2024-01-22 14:55:07.351 ERROR 315   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 14:56:03.067 INFO  320   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Connexion : OK
+2024-01-22 14:56:12.937 ERROR 364   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 15:04:03.652 INFO  314   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Connexion : OK
+2024-01-22 15:04:16.950 ERROR 399   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 15:04:56.486 ERROR 315   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 15:05:53.540 ERROR 317   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 15:06:18.629 ERROR 318   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 15:06:32.899 ERROR 312   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 15:06:47.908 ERROR 317   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Echec de connexion
+2024-01-22 15:07:15.742 INFO  331   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Connexion : OK
+2024-01-22 15:25:59.442 INFO  329   ---
+				[main] f.d.g.sansORM.dao.ConnexionBDD : Connexion : OK
+2024-01-22 15:25:59.472 INFO  359   ---
+				[main] f.d.g.sansORM.dao.UtilisateurDAO : [Utilisateur [id=1, nom=Dupont, prenom=Cedric, email=cedric@gmail.com], Utilisateur [id=2, nom=Laguerre, prenom=Sandrine, email=sandrine@gmail.com], Utilisateur [id=3, nom=Robert, prenom=Pierre, email=pierre@gmail.com]]
+2024-01-22 17:15:24.098 INFO  189   ---
+				[main] o.h.j.b.i.PersistenceXmlParser : HHH000318: Could not find any META-INF/persistence.xml file in the classpath
+2024-01-22 17:18:56.389 INFO  238   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-22 17:18:56.443 INFO  292   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-22 17:18:56.484 INFO  333   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-22 17:18:56.661 WARN  510   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-22 17:18:56.677 INFO  526   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-22 17:18:56.677 INFO  526   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-22 17:18:56.677 INFO  526   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-22 17:18:56.677 INFO  526   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-22 17:18:56.681 INFO  530   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-22 17:18:56.827 WARN  676   ---
+				[main] o.h.e.j.e.i.JdbcEnvironmentInitiator : HHH000342: Could not obtain connection to query metadata
+org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.MysqlDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:154)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:236)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:189)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:123)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:88)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$1.execute(JdbcEnvironmentInitiator.java:328)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$1.execute(JdbcEnvironmentInitiator.java:277)
+	at org.hibernate.jdbc.WorkExecutor.executeReturningWork(WorkExecutor.java:58)
+	at org.hibernate.jdbc.AbstractReturningWork.accept(AbstractReturningWork.java:34)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:70)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:55)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at fr.dawan.gestioncomptebancaire.avecORM.ConnexionTest.testConnexionBDD(ConnexionTest.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [org.hibernate.dialect.MysqlDialect]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:126)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:150)
+	... 96 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : org.hibernate.dialect.MysqlDialect
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:216)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:587)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:123)
+	... 97 common frames omitted
+Caused by: java.lang.Throwable: null
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:209)
+	... 102 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.dialect.MysqlDialect
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:206)
+		... 102 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.dialect.MysqlDialect
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:206)
+		... 102 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.dialect.MysqlDialect
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:206)
+		... 102 common frames omitted
+2024-01-22 17:18:56.832 INFO  681   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-22 17:20:29.302 INFO  242   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-22 17:20:29.359 INFO  299   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-22 17:20:29.397 INFO  337   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-22 17:20:29.582 WARN  522   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-22 17:20:29.597 INFO  537   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-22 17:20:29.598 INFO  538   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-22 17:20:29.598 INFO  538   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-22 17:20:29.598 INFO  538   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-22 17:20:29.602 INFO  542   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-22 17:20:29.775 WARN  715   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-22 17:20:29.780 WARN  720   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 17:20:30.675 INFO  1615  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 17:20:30.691 INFO  1631  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@125f16b2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-22 17:20:30.704 INFO  1644  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@72c4a3aa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-22 17:24:27.227 INFO  253   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-22 17:24:27.283 INFO  309   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-22 17:24:27.325 INFO  351   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-22 17:24:27.508 WARN  534   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-22 17:24:27.524 INFO  550   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-22 17:24:27.524 INFO  550   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-22 17:24:27.524 INFO  550   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-22 17:24:27.524 INFO  550   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-22 17:24:27.527 INFO  553   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-22 17:24:27.701 WARN  727   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-22 17:24:27.706 WARN  732   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 17:24:28.588 INFO  1614  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 17:24:28.606 INFO  1632  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@26b3c9a2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-22 17:24:28.620 INFO  1646  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4c4c7d6c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-22 17:24:28.661 INFO  1687  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-22 17:24:28.668 INFO  1694  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-22 17:24:28.680 WARN  1706  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-22 17:24:28.680 INFO  1706  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-22 17:24:28.680 INFO  1706  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-22 17:24:28.680 INFO  1706  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-22 17:24:28.680 INFO  1706  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-22 17:24:28.680 INFO  1706  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-22 17:24:28.685 WARN  1711  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-22 17:24:28.686 WARN  1712  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-22 17:24:28.723 INFO  1749  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 17:24:28.723 INFO  1749  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@626c569b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-22 17:24:28.730 INFO  1756  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@65593327] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.

@@ -20,11 +20,12 @@ public class Utilisateur implements Serializable{
 	/*
 	 * L'annotation @Id permet de specifier que l'attribut id sera la clé primaire dans la table 
 	 * 
-	 * Si on veut que la clé primaire soit autogénéré (auto-incrementé) on utilise l'annotation @GeneratedValue
+	 * Si on veut que la clé primaire soit autogénéré (auto-incrementé) on utilise 
+	 * l'annotation @GeneratedValue
 	 */
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	@GeneratedValue
+	private Long id;
 	
 	private String nom; 
 	private String prenom;
@@ -43,11 +44,11 @@ public class Utilisateur implements Serializable{
 		this.email = email;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

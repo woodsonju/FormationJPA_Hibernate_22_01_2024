@@ -9,7 +9,7 @@ public interface IUtilisateurRepository {
 	void addUser(Utilisateur user);
 	Utilisateur findUserById(Long id);
 	void deleteUserById(Long id);
-	void updateUser(Utilisateur user);
+	void updateUser(Utilisateur user) throws Exception;
 	List<Utilisateur> getAllUsers();
 	
 	List<Utilisateur> findAll(int begin, int nbResult);

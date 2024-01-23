@@ -10,6 +10,8 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
+import jakarta.persistence.Query;
+import jakarta.persistence.TypedQuery;
 
 public class UtilisateurRepository implements IUtilisateurRepository {
 
@@ -51,7 +53,7 @@ public class UtilisateurRepository implements IUtilisateurRepository {
 	public Utilisateur findUserById(Long id) {
 		EntityManager em = createEntityManager();
 		Utilisateur user = null;
-		
+
 		try {
 			user = em.find(Utilisateur.class, id);
 			logger.info("Recuperation de l'utilisateur : " + user);
@@ -67,28 +69,108 @@ public class UtilisateurRepository implements IUtilisateurRepository {
 
 	@Override
 	public void deleteUserById(Long id) {
-		// TODO Auto-generated method stub
+		EntityManager em = createEntityManager();
+		//Creation d'une transaction 
+		EntityTransaction transaction = em.getTransaction();
+
+		try {
+			transaction.begin();
+
+			Utilisateur user = em.find(Utilisateur.class, id);
+			if(user != null) {
+				em.remove(user);
+			}
+
+			transaction.commit();
+			logger.info("L'utilisateur a été supprimé : OK");
+
+		} catch (Exception e) {
+			transaction.rollback();
+			logger.error("Erreur lors de la suppression de l'utilisateur");
+			e.printStackTrace();
+		}finally {
+			em.close();
+		}
 
 	}
 
 	@Override
-	public void updateUser(Utilisateur user) {
-		// TODO Auto-generated method stub
+	public void updateUser(Utilisateur user) throws Exception {
+		EntityManager em = createEntityManager();
+		//Creation d'une transaction 
+		EntityTransaction transaction = em.getTransaction();
+		
+		try {
+			transaction.begin();
+			em.merge(user);
+			transaction.commit();
+			logger.info("L'utilisateur a été mise à jour  ");
+		} catch (Exception e) {
+			transaction.rollback();
+			logger.error("Erreur lors de la mise de l'utilisateur");
+			logger.error("Echec Interdiction de mettre à jour simultanement la même entité (Vérrouillage optimiste)" + e);
+			
+			e.printStackTrace();
+			throw new Exception("Echec Interdiction de mettre à jour simultanement la même entité (Vérrouillage optimiste)" + e);
+		}finally {
+			em.close();
+		}
 
 	}
 
 	@Override
 	public List<Utilisateur> getAllUsers() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Utilisateur> users = null;
+		EntityManager em = createEntityManager();
+		
+		try {
+			//Creation de la requete JPQL : SELECT u FROM Utilisateur u
+			String user_jpql_query = "SELECT u FROM " + Utilisateur.class.getName() + " u"; 
+			TypedQuery<Utilisateur> query =  em.createQuery(user_jpql_query, Utilisateur.class);
+			
+			//Execution de la requête pour recuperer le resultat 
+			users = query.getResultList();
+			
+			logger.info("Récuperation de la liste des utilisateurs avec succès " + users);
+			 
+		} catch (Exception e) {
+			logger.error("Erreur lors de la recuperation de la liste des utilisateurs");
+			e.printStackTrace();
+		} finally {
+			em.close();
+		}
+		
+		return users;
 	}
 
 	@Override
 	public List<Utilisateur> findAll(int begin, int nbResult) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		List<Utilisateur> users = null;
+		EntityManager em = createEntityManager();
+		
+		try {
+			//Creation de la requete JPQL : SELECT u FROM Utilisateur u
+			String user_jpql_query = "SELECT u FROM " + Utilisateur.class.getName() + " u"; 
+			TypedQuery<Utilisateur> query =  em.createQuery(user_jpql_query, Utilisateur.class);
+			
+			//Execution de la requête pour recuperer le resultat 
+			users = query.setFirstResult(begin)//Definit l'index du premier resultat à recuperer
+					.setMaxResults(nbResult)    //Definit le nombre maximal de resultats à recuperer
+					.getResultList();
+			
+			logger.info("Récuperation de la liste des utilisateurs (paginées) avec succès " + users);
+			 
+		} catch (Exception e) {
+			logger.error("Erreur lors de la recuperation de la liste des utilisateurs paginées");
+			e.printStackTrace();
+		} finally {
+			em.close();
+		}
+		
+		return users;
 	}
-	
+
 
 	/**
 	 * Crée et retourne un objet EntityManager pour interagir avec la base données.

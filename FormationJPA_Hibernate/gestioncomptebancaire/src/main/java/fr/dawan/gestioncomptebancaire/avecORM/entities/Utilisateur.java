@@ -8,7 +8,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import jakarta.persistence.TableGenerator;
+import jakarta.persistence.Version;
 
 @Entity
 @Table(name="t_User")
@@ -23,8 +26,23 @@ public class Utilisateur implements Serializable{
 	 * Si on veut que la clé primaire soit autogénéré (auto-incrementé) on utilise 
 	 * l'annotation @GeneratedValue
 	 */
+
+//	@GeneratedValue(strategy = GenerationType.TABLE,  generator = "table-generator")
+//	@TableGenerator(name = "table-generator", 
+//			table="user_ids", 
+//			pkColumnName = "seq_id", 
+//			valueColumnName = "seq_value")
+	
+
+//	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence-generator")
+//	@SequenceGenerator(
+//			name="sequence-generator",
+//			sequenceName = "user_sequence",
+//			allocationSize = 5
+//			)
+	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	private String nom; 
@@ -32,6 +50,10 @@ public class Utilisateur implements Serializable{
 	
 	@Column(nullable = false, unique = true)
 	private String email;
+	
+	
+	@Version
+	private int version;
 	
 	public Utilisateur() {
 		super();

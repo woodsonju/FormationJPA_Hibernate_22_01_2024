@@ -3,6 +3,8 @@ package fr.dawan.gestioncomptebancaire.sansORM.model;
 import java.io.Serializable;
 import java.util.Objects;
 
+import jakarta.persistence.Version;
+
 public class Utilisateur implements Serializable{
 
 
@@ -12,6 +14,7 @@ public class Utilisateur implements Serializable{
 	private String nom; 
 	private String prenom;
 	private String email;
+
 	
 	public Utilisateur() {
 		super();

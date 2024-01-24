@@ -6,6 +6,8 @@ import fr.dawan.gestioncomptebancaire.avecORM.entities.Utilisateur;
 
 public interface IUtilisateurRepository extends IGenericRepository<Utilisateur, Long>{
 
+
 	List<Utilisateur> findAll(int begin, int nbResult);
 	
+
 }

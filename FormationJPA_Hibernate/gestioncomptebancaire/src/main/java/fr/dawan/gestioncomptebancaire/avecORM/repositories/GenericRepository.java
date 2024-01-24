@@ -105,7 +105,7 @@ public class GenericRepository<T, ID> implements IGenericRepository<T, ID> {
 	 * Crée et retourne un objet EntityManager pour interagir avec la base données.
 	 * @return  EntityManager nouvellement créé
 	 */
-	private EntityManager createEntityManager() {
+	protected EntityManager createEntityManager() {
 		//Création de l'entityManagerFactory
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory(persistenceUnit);
 		//Création de l'entityManager

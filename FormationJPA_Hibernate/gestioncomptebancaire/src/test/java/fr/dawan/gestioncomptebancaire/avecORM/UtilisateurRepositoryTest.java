@@ -32,16 +32,14 @@ class UtilisateurRepositoryTest {
 
 	@Test
 	void testAddUser() {
-	
+
 		//Créer un objet utilisateur pour le test  (Etat de l'objet : Transient)
 		Utilisateur user = new Utilisateur();
 		user.setNom("Carpentier");
 		user.setPrenom("Thomas");
-		
-		String generatedEmail1 = EmailGenerator.generateEmail(user.getNom(), user.getPrenom());
 
 		//String generatedEmail1 = EmailGenerator.generateEmail(user.getNom(), user.getPrenom());	
-		user.setEmail(generatedEmail1);
+		user.setEmail("cThomas100@gmailcom");
 
 		//Aappeler la méthode addUser et verifier si elle fonctionne correctement 
 		repositoryOld.addUser(user);  //(Etat de l'objet : Managé)
@@ -71,7 +69,7 @@ class UtilisateurRepositoryTest {
 		Utilisateur user = new Utilisateur();
 		user.setNom("Petit");
 		user.setPrenom("Jean");
-		user.setEmail("pJean.gmail.com");
+		user.setEmail("pJean10.gmail.com");
 
 		repositoryOld.addUser(user);
 
@@ -90,9 +88,7 @@ class UtilisateurRepositoryTest {
 		Utilisateur user = new Utilisateur();
 		user.setNom("Deschamps");
 		user.setPrenom("David");
-
-		String generatedEmail1 = EmailGenerator.generateEmail(user.getNom(), user.getPrenom());	
-		user.setEmail(generatedEmail1);
+		user.setEmail("DDeschamps120@gmail.col");
 
 		repositoryOld.addUser(user);
 
@@ -126,7 +122,7 @@ class UtilisateurRepositoryTest {
 
 	@Test
 	void testFindAll() {
-		List<Utilisateur> users = repositoryOld.findAll(0, 2);
+		List<Utilisateur> users = repository.findAll(0, 2);
 
 		assertEquals(2, users.size());
 
@@ -143,31 +139,32 @@ class UtilisateurRepositoryTest {
 		Utilisateur user = new Utilisateur();
 		user.setNom("Luc");
 		user.setPrenom("Harne");
-		user.setEmail("lHarne60.gmail.com");
-		
+		user.setEmail("lHarne603.gmail.com");
+
 		repositoryOld.addUser(user);
-		
+
 		Long userId = user.getId();
-		
+
 		Utilisateur userFromDb1 = repositoryOld.findUserById(userId);
 		Utilisateur userFromDb2 = repositoryOld.findUserById(userId);
-		
+
 		assertNotNull(userFromDb1);
 		assertNotNull(userFromDb2);
-		
+
 		//Utilisateur 1 met à jour le nom 
 		userFromDb1.setNom("Lucien");
-		
+
 		//Utilisateur 2 met à jour le nom 
 		userFromDb2.setNom("Jean Luc");
-		
+
 		//Sauvegarde des modifications des deux utilisateurs 
 		repositoryOld.updateUser(userFromDb1);
-		
+
 		assertThrows(Exception.class, () -> repositoryOld.updateUser(userFromDb2));
-		
+
 	}
-	
+
+
 	
 
 }

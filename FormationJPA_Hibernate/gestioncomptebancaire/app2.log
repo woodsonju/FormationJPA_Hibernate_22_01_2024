@@ -4952,3 +4952,1235 @@
 				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de la mise de l'utilisateur
 2024-01-23 16:36:18.980 ERROR 2111  ---
 				[main] f.d.g.a.r.UtilisateurRepository : Echec Interdiction de mettre à jour simultanement la même entité (Vérrouillage optimiste)Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [fr.dawan.gestioncomptebancaire.avecORM.entities.Utilisateur#11]
+2024-01-23 17:46:30.908 INFO  257   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:46:30.961 INFO  310   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:46:31.000 INFO  349   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:46:31.185 WARN  534   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:46:31.199 INFO  548   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:46:31.199 INFO  548   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:46:31.200 INFO  549   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:46:31.200 INFO  549   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:46:31.202 INFO  551   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:46:31.371 WARN  720   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:46:31.376 WARN  725   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:46:32.232 INFO  1581  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:46:32.253 INFO  1602  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b066c33] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:46:32.335 INFO  1684  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Utilisateur ajouté : OK
+2024-01-23 17:46:32.340 INFO  1689  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:46:32.346 INFO  1695  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:46:32.360 WARN  1709  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:46:32.360 INFO  1709  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:46:32.360 INFO  1709  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:46:32.361 INFO  1710  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:46:32.361 INFO  1710  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:46:32.361 INFO  1710  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:46:32.365 WARN  1714  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:46:32.366 WARN  1715  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:46:32.400 INFO  1749  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:46:32.401 INFO  1750  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@40dd552c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:46:32.445 INFO  1794  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Recuperation de l'utilisateur : Utilisateur [id=12, nom=Carpentier, prenom=Thomas, email=carpentier.thomas1@gmail.com]
+2024-01-23 17:46:44.310 INFO  266   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:46:44.371 INFO  327   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:46:44.414 INFO  370   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:46:44.600 WARN  556   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:46:44.614 INFO  570   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:46:44.614 INFO  570   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:46:44.614 INFO  570   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:46:44.614 INFO  570   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:46:44.617 INFO  573   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:46:44.783 WARN  739   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:46:44.789 WARN  745   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:46:45.650 INFO  1606  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:46:45.671 INFO  1627  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b066c33] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:46:45.748 WARN  1704  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:46:45.748 ERROR 1704  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:46:45.757 ERROR 1713  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:46:45.764 INFO  1720  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:46:45.769 INFO  1725  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:46:45.782 WARN  1738  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:46:45.782 INFO  1738  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:46:45.782 INFO  1738  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:46:45.782 INFO  1738  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:46:45.782 INFO  1738  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:46:45.782 INFO  1738  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:46:45.786 WARN  1742  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:46:45.787 WARN  1743  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:46:45.824 INFO  1780  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:46:45.824 INFO  1780  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@163e8949] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:46:45.835 ERROR 1791  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:50:15.227 INFO  260   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:15.280 INFO  313   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:50:15.319 INFO  352   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:15.497 WARN  530   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:15.512 INFO  545   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:15.512 INFO  545   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:15.512 INFO  545   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:15.512 INFO  545   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:15.515 INFO  548   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:15.686 WARN  719   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:15.691 WARN  724   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:16.579 INFO  1612  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:16.600 INFO  1633  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@71166348] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:16.673 WARN  1706  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:50:16.673 ERROR 1706  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:50:16.682 ERROR 1715  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:50:16.689 INFO  1722  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:16.695 INFO  1728  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:16.708 WARN  1741  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:16.708 INFO  1741  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:16.708 INFO  1741  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:16.708 INFO  1741  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:16.708 INFO  1741  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:16.709 INFO  1742  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:16.712 WARN  1745  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:16.713 WARN  1746  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:16.749 INFO  1782  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:16.749 INFO  1782  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@675ec28b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:16.759 ERROR 1792  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:50:16.778 INFO  1811  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:16.784 INFO  1817  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:16.796 WARN  1829  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:16.797 INFO  1830  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:16.797 INFO  1830  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:16.797 INFO  1830  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:16.797 INFO  1830  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:16.797 INFO  1830  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:16.800 WARN  1833  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:16.801 WARN  1834  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:16.834 INFO  1867  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:16.835 INFO  1868  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@22b7ef2b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.082 INFO  2115  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Récuperation de la liste des utilisateurs (paginées) avec succès [Utilisateur [id=1, nom=Carpentier, prenom=Thomas, email=Carpentier25@gmail.com], Utilisateur [id=2, nom=Carpentier, prenom=Thomas, email=Carpentier29@gmail.com]]
+2024-01-23 17:50:17.088 INFO  2121  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.093 INFO  2126  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.109 WARN  2142  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.109 INFO  2142  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.109 INFO  2142  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.109 INFO  2142  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.109 INFO  2142  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.110 INFO  2143  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.113 WARN  2146  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.114 WARN  2147  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.146 INFO  2179  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.147 INFO  2180  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@77ce8bc5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.157 INFO  2190  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Récuperation de la liste des utilisateurs avec succès [Utilisateur [id=1, nom=Carpentier, prenom=Thomas, email=Carpentier25@gmail.com], Utilisateur [id=2, nom=Carpentier, prenom=Thomas, email=Carpentier29@gmail.com], Utilisateur [id=3, nom=Lucien, prenom=Harne, email=lHarne.gmail.com], Utilisateur [id=6, nom=Lucien, prenom=Harne, email=lHarne2.gmail.com], Utilisateur [id=7, nom=Lucien, prenom=Harne, email=lHarne3.gmail.com], Utilisateur [id=9, nom=Lucien, prenom=Harne, email=lHarne4.gmail.com], Utilisateur [id=10, nom=Lucien, prenom=Harne, email=lHarne6.gmail.com], Utilisateur [id=11, nom=Lucien, prenom=Harne, email=lHarne60.gmail.com], Utilisateur [id=12, nom=Carpentier, prenom=Thomas, email=carpentier.thomas1@gmail.com]]
+2024-01-23 17:50:17.164 INFO  2197  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.168 INFO  2201  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.181 WARN  2214  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.181 INFO  2214  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.181 INFO  2214  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.181 INFO  2214  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.181 INFO  2214  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.181 INFO  2214  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.185 WARN  2218  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.185 WARN  2218  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.214 INFO  2247  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.215 INFO  2248  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b2da3a5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.234 INFO  2267  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Utilisateur ajouté : OK
+2024-01-23 17:50:17.238 INFO  2271  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.243 INFO  2276  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.255 WARN  2288  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.255 INFO  2288  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.255 INFO  2288  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.255 INFO  2288  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.255 INFO  2288  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.255 INFO  2288  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.259 WARN  2292  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.259 WARN  2292  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.288 INFO  2321  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.289 INFO  2322  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4f7ba0af] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.313 INFO  2346  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur a été mise à jour  
+2024-01-23 17:50:17.316 INFO  2349  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.321 INFO  2354  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.332 WARN  2365  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.332 INFO  2365  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.332 INFO  2365  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.332 INFO  2365  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.332 INFO  2365  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.332 INFO  2365  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.336 WARN  2369  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.337 WARN  2370  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.362 INFO  2395  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.363 INFO  2396  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73b8ab2c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.370 INFO  2403  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Recuperation de l'utilisateur : Utilisateur [id=15, nom=Dupont, prenom=Marie, email=dupont.marie3@gmail.com]
+2024-01-23 17:50:17.375 INFO  2408  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.379 INFO  2412  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.389 WARN  2422  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.390 INFO  2423  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.390 INFO  2423  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.390 INFO  2423  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.390 INFO  2423  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.390 INFO  2423  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.394 WARN  2427  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.395 WARN  2428  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.441 INFO  2474  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.442 INFO  2475  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5c5f12e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.452 INFO  2485  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Utilisateur ajouté : OK
+2024-01-23 17:50:17.455 INFO  2488  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.459 INFO  2492  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.470 WARN  2503  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.470 INFO  2503  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.470 INFO  2503  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.470 INFO  2503  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.471 INFO  2504  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.471 INFO  2504  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.474 WARN  2507  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.474 WARN  2507  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.499 INFO  2532  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.500 INFO  2533  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@614d7fbf] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.512 INFO  2545  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur a été supprimé : OK
+2024-01-23 17:50:17.515 INFO  2548  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.519 INFO  2552  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.529 WARN  2562  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.529 INFO  2562  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.529 INFO  2562  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.529 INFO  2562  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.530 INFO  2563  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.530 INFO  2563  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.533 WARN  2566  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.533 WARN  2566  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.558 INFO  2591  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.559 INFO  2592  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@465d1345] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.565 INFO  2598  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Recuperation de l'utilisateur : null
+2024-01-23 17:50:17.571 INFO  2604  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.575 INFO  2608  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.586 WARN  2619  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.586 INFO  2619  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.586 INFO  2619  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.586 INFO  2619  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.586 INFO  2619  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.587 INFO  2620  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.591 WARN  2624  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.591 WARN  2624  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.619 INFO  2652  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.619 INFO  2652  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@983050b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.626 WARN  2659  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:50:17.626 ERROR 2659  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'lHarne60.gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:50:17.627 ERROR 2660  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:50:17.632 INFO  2665  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.636 INFO  2669  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.647 WARN  2680  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.648 INFO  2681  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.648 INFO  2681  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.648 INFO  2681  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.648 INFO  2681  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.648 INFO  2681  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.651 WARN  2684  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.652 WARN  2685  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.680 INFO  2713  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.681 INFO  2714  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@523ade68] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.687 ERROR 2720  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:50:17.690 INFO  2723  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:17.695 INFO  2728  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:17.706 WARN  2739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:17.706 INFO  2739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:17.706 INFO  2739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:17.706 INFO  2739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:17.706 INFO  2739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:17.706 INFO  2739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:17.711 WARN  2744  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:17.711 WARN  2744  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:17.739 INFO  2772  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:17.740 INFO  2773  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@55a055cc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:17.745 ERROR 2778  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:50:36.780 INFO  264   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:36.832 INFO  316   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:50:36.872 INFO  356   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:37.053 WARN  537   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:37.068 INFO  552   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:37.068 INFO  552   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:37.069 INFO  553   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:37.069 INFO  553   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:37.071 INFO  555   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:37.243 WARN  727   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:37.248 WARN  732   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:38.140 INFO  1624  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:38.160 INFO  1644  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1a2e563e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:38.234 WARN  1718  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:50:38.234 ERROR 1718  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:50:38.242 ERROR 1726  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:50:38.248 INFO  1732  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:50:38.254 INFO  1738  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:50:38.267 WARN  1751  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:50:38.267 INFO  1751  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:50:38.267 INFO  1751  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:50:38.267 INFO  1751  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:50:38.268 INFO  1752  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:50:38.268 INFO  1752  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:50:38.271 WARN  1755  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:50:38.272 WARN  1756  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:50:38.308 INFO  1792  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:50:38.308 INFO  1792  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ef5dd23] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:50:38.318 ERROR 1802  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:51:18.796 INFO  257   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:51:18.853 INFO  314   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:51:18.910 INFO  371   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:51:19.087 WARN  548   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:51:19.101 INFO  562   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:51:19.101 INFO  562   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:51:19.102 INFO  563   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:51:19.102 INFO  563   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:51:19.105 INFO  566   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:51:19.274 WARN  735   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:51:19.278 WARN  739   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:51:20.166 INFO  1627  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:51:20.186 INFO  1647  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@65600fb3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:51:20.267 INFO  1728  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Utilisateur ajouté : OK
+2024-01-23 17:51:20.272 INFO  1733  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:51:20.277 INFO  1738  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:51:20.291 WARN  1752  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:51:20.291 INFO  1752  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:51:20.291 INFO  1752  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:51:20.291 INFO  1752  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:51:20.291 INFO  1752  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:51:20.291 INFO  1752  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:51:20.296 WARN  1757  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:51:20.296 WARN  1757  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:51:20.333 INFO  1794  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:51:20.334 INFO  1795  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@570b2057] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:51:20.382 INFO  1843  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur a été supprimé : OK
+2024-01-23 17:51:20.386 INFO  1847  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:51:20.390 INFO  1851  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:51:20.404 WARN  1865  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:51:20.404 INFO  1865  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:51:20.404 INFO  1865  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:51:20.404 INFO  1865  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:51:20.404 INFO  1865  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:51:20.404 INFO  1865  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:51:20.408 WARN  1869  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:51:20.409 WARN  1870  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:51:20.444 INFO  1905  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:51:20.444 INFO  1905  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1736c1e4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:51:20.452 INFO  1913  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Recuperation de l'utilisateur : null
+2024-01-23 17:51:30.212 INFO  256   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:51:30.270 INFO  314   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:51:30.313 INFO  357   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:51:30.522 WARN  566   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:51:30.537 INFO  581   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:51:30.537 INFO  581   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:51:30.538 INFO  582   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:51:30.538 INFO  582   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:51:30.541 INFO  585   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:51:30.716 WARN  760   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:51:30.721 WARN  765   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:51:31.579 INFO  1623  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:51:31.600 INFO  1644  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:51:31.676 WARN  1720  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:51:31.677 ERROR 1721  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:51:31.684 ERROR 1728  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:51:31.691 INFO  1735  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:51:31.696 INFO  1740  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:51:31.709 WARN  1753  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:51:31.709 INFO  1753  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:51:31.709 INFO  1753  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:51:31.710 INFO  1754  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:51:31.710 INFO  1754  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:51:31.710 INFO  1754  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:51:31.713 WARN  1757  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:51:31.714 WARN  1758  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:51:31.749 INFO  1793  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:51:31.750 INFO  1794  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@638afcaa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:51:31.760 ERROR 1804  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:53:29.244 INFO  257   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:53:29.302 INFO  315   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:53:29.342 INFO  355   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:53:29.542 WARN  555   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:53:29.556 INFO  569   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:53:29.557 INFO  570   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:53:29.557 INFO  570   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:53:29.557 INFO  570   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:53:29.560 INFO  573   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:53:29.730 WARN  743   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:53:29.736 WARN  749   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:53:30.592 INFO  1605  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:53:30.613 INFO  1626  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:53:30.694 INFO  1707  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Utilisateur ajouté : OK
+2024-01-23 17:53:30.699 INFO  1712  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:53:30.704 INFO  1717  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:53:30.718 WARN  1731  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:53:30.718 INFO  1731  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:53:30.718 INFO  1731  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:53:30.718 INFO  1731  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:53:30.718 INFO  1731  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:53:30.718 INFO  1731  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:53:30.722 WARN  1735  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:53:30.723 WARN  1736  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:53:30.759 INFO  1772  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:53:30.760 INFO  1773  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@76e6c070] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:53:30.798 INFO  1811  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Recuperation de l'utilisateur : Utilisateur [id=21, nom=Carpentier, prenom=Thomas, email=carpentier.thomas2@gmail.com]
+2024-01-23 17:53:41.248 INFO  253   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:53:41.303 INFO  308   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:53:41.344 INFO  349   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:53:41.529 WARN  534   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:53:41.544 INFO  549   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:53:41.545 INFO  550   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:53:41.545 INFO  550   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:53:41.545 INFO  550   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:53:41.548 INFO  553   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:53:41.718 WARN  723   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:53:41.723 WARN  728   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:53:42.569 INFO  1574  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:53:42.589 INFO  1594  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:53:42.662 WARN  1667  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:53:42.662 ERROR 1667  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas2@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:53:42.670 ERROR 1675  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:53:42.677 INFO  1682  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:53:42.682 INFO  1687  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:53:42.694 WARN  1699  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:53:42.695 INFO  1700  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:53:42.695 INFO  1700  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:53:42.695 INFO  1700  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:53:42.695 INFO  1700  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:53:42.695 INFO  1700  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:53:42.699 WARN  1704  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:53:42.699 WARN  1704  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:53:42.735 INFO  1740  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:53:42.736 INFO  1741  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@638afcaa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:53:42.745 ERROR 1750  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:54:31.421 INFO  249   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:54:31.474 INFO  302   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:54:31.513 INFO  341   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:54:31.692 WARN  520   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:54:31.707 INFO  535   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:54:31.707 INFO  535   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:54:31.707 INFO  535   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:54:31.707 INFO  535   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:54:31.710 INFO  538   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:54:31.880 WARN  708   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:54:31.885 WARN  713   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:54:32.729 INFO  1557  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:54:32.749 INFO  1577  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:54:32.823 WARN  1651  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:54:32.823 ERROR 1651  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:54:32.831 ERROR 1659  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:54:32.839 INFO  1667  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:54:32.844 INFO  1672  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:54:32.857 WARN  1685  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:54:32.857 INFO  1685  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:54:32.857 INFO  1685  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:54:32.857 INFO  1685  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:54:32.857 INFO  1685  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:54:32.857 INFO  1685  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:54:32.861 WARN  1689  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:54:32.862 WARN  1690  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:54:32.898 INFO  1726  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:54:32.899 INFO  1727  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@638afcaa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:54:32.908 ERROR 1736  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:55:36.185 INFO  256   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:55:36.240 INFO  311   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:55:36.278 INFO  349   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:55:36.455 WARN  526   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:55:36.470 INFO  541   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:55:36.471 INFO  542   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:55:36.471 INFO  542   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:55:36.471 INFO  542   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:55:36.474 INFO  545   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:55:36.645 WARN  716   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:55:36.649 WARN  720   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:55:37.545 INFO  1616  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:55:37.565 INFO  1636  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@79cb8ffa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:55:37.639 WARN  1710  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:55:37.639 ERROR 1710  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:55:37.646 ERROR 1717  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:55:37.653 INFO  1724  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:55:37.659 INFO  1730  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:55:37.672 WARN  1743  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:55:37.672 INFO  1743  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:55:37.673 INFO  1744  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:55:37.673 INFO  1744  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:55:37.673 INFO  1744  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:55:37.673 INFO  1744  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:55:37.677 WARN  1748  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:55:37.678 WARN  1749  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:55:37.714 INFO  1785  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:55:37.715 INFO  1786  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@58601e7a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:55:37.724 ERROR 1795  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:56:16.494 INFO  261   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:56:16.546 INFO  313   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:56:16.586 INFO  353   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:56:16.764 WARN  531   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:56:16.779 INFO  546   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:56:16.779 INFO  546   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:56:16.779 INFO  546   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:56:16.779 INFO  546   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:56:16.782 INFO  549   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:56:16.950 WARN  717   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:56:16.955 WARN  722   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:56:17.829 INFO  1596  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:56:17.849 INFO  1616  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:56:17.923 WARN  1690  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:56:17.923 ERROR 1690  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:56:17.932 ERROR 1699  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:56:17.939 INFO  1706  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:56:17.944 INFO  1711  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:56:17.958 WARN  1725  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:56:17.959 INFO  1726  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:56:17.959 INFO  1726  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:56:17.959 INFO  1726  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:56:17.959 INFO  1726  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:56:17.959 INFO  1726  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:56:17.962 WARN  1729  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:56:17.963 WARN  1730  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:56:17.999 INFO  1766  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:56:18.000 INFO  1767  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@638afcaa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:56:18.010 ERROR 1777  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:56:44.329 INFO  261   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:56:44.391 INFO  323   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:56:44.429 INFO  361   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:56:44.609 WARN  541   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:56:44.624 INFO  556   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:56:44.624 INFO  556   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:56:44.625 INFO  557   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:56:44.625 INFO  557   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:56:44.628 INFO  560   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:56:44.799 WARN  731   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:56:44.804 WARN  736   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:56:45.669 INFO  1601  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:56:45.689 INFO  1621  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:56:45.762 WARN  1694  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:56:45.762 ERROR 1694  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas2@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:56:45.770 ERROR 1702  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:56:45.777 INFO  1709  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:56:45.782 INFO  1714  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:56:45.795 WARN  1727  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:56:45.796 INFO  1728  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:56:45.796 INFO  1728  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:56:45.796 INFO  1728  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:56:45.796 INFO  1728  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:56:45.796 INFO  1728  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:56:45.800 WARN  1732  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:56:45.801 WARN  1733  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:56:45.838 INFO  1770  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:56:45.838 INFO  1770  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@638afcaa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:56:45.847 ERROR 1779  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:58:17.658 INFO  254   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:58:17.712 INFO  308   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:58:17.752 INFO  348   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:58:17.928 WARN  524   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:58:17.943 INFO  539   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:58:17.943 INFO  539   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:58:17.944 INFO  540   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:58:17.944 INFO  540   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:58:17.947 INFO  543   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:58:18.116 WARN  712   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:58:18.120 WARN  716   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:58:18.964 INFO  1560  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:58:18.984 INFO  1580  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:58:19.058 WARN  1654  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:58:19.058 ERROR 1654  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:58:19.066 ERROR 1662  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:58:19.072 INFO  1668  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:58:19.078 INFO  1674  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:58:19.090 WARN  1686  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:58:19.091 INFO  1687  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:58:19.091 INFO  1687  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:58:19.091 INFO  1687  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:58:19.091 INFO  1687  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:58:19.091 INFO  1687  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:58:19.095 WARN  1691  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:58:19.096 WARN  1692  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:58:19.131 INFO  1727  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:58:19.132 INFO  1728  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@638afcaa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:58:19.141 ERROR 1737  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 17:58:36.206 INFO  256   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:58:36.258 INFO  308   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 17:58:36.295 INFO  345   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:58:36.484 WARN  534   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:58:36.500 INFO  550   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:58:36.501 INFO  551   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:58:36.501 INFO  551   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:58:36.501 INFO  551   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:58:36.504 INFO  554   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:58:36.673 WARN  723   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:58:36.677 WARN  727   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:58:37.571 INFO  1621  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:58:37.591 INFO  1641  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:58:37.665 WARN  1715  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 17:58:37.665 ERROR 1715  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas2@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 17:58:37.673 ERROR 1723  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 17:58:37.681 INFO  1731  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 17:58:37.686 INFO  1736  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 17:58:37.698 WARN  1748  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 17:58:37.699 INFO  1749  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 17:58:37.699 INFO  1749  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 17:58:37.699 INFO  1749  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 17:58:37.699 INFO  1749  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 17:58:37.699 INFO  1749  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 17:58:37.703 WARN  1753  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 17:58:37.703 WARN  1753  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 17:58:37.739 INFO  1789  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 17:58:37.740 INFO  1790  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@638afcaa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 17:58:37.749 ERROR 1799  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 18:00:15.424 INFO  261   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 18:00:15.484 INFO  321   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 18:00:15.522 INFO  359   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 18:00:15.700 WARN  537   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 18:00:15.714 INFO  551   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 18:00:15.714 INFO  551   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 18:00:15.715 INFO  552   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 18:00:15.715 INFO  552   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 18:00:15.718 INFO  555   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 18:00:15.887 WARN  724   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 18:00:15.892 WARN  729   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 18:00:16.767 INFO  1604  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 18:00:16.789 INFO  1626  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 18:00:16.869 WARN  1706  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 18:00:16.869 ERROR 1706  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 18:00:16.877 ERROR 1714  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 18:00:16.884 INFO  1721  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 18:00:16.889 INFO  1726  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 18:00:16.901 WARN  1738  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 18:00:16.902 INFO  1739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 18:00:16.902 INFO  1739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 18:00:16.902 INFO  1739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 18:00:16.902 INFO  1739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 18:00:16.902 INFO  1739  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 18:00:16.905 WARN  1742  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 18:00:16.906 WARN  1743  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 18:00:16.942 INFO  1779  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 18:00:16.942 INFO  1779  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@638afcaa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 18:00:16.951 ERROR 1788  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas
+2024-01-23 18:00:53.357 INFO  255   ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 18:00:53.416 INFO  314   ---
+				[main] org.hibernate.Version : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-23 18:00:53.455 INFO  353   ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 18:00:53.632 WARN  530   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 18:00:53.648 INFO  546   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 18:00:53.648 INFO  546   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 18:00:53.648 INFO  546   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 18:00:53.648 INFO  546   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 18:00:53.651 INFO  549   ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 18:00:53.833 WARN  731   ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 18:00:53.837 WARN  735   ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 18:00:54.690 INFO  1588  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 18:00:54.710 INFO  1608  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@42cf6349] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 18:00:54.783 WARN  1681  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Error: 1062, SQLState: 23000
+2024-01-23 18:00:54.784 ERROR 1682  ---
+				[main] o.h.e.jdbc.spi.SqlExceptionHelper : Duplicata du champ 'carpentier.thomas1@gmail.com' pour la clef 'UK_drv5rmuis97hk2q9gamjuiibp'
+2024-01-23 18:00:54.793 ERROR 1691  ---
+				[main] f.d.g.a.r.UtilisateurRepository : Erreur lors de l'ajout de l'utilisateur
+2024-01-23 18:00:54.800 INFO  1698  ---
+				[main] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: gestionCB_mysql]
+2024-01-23 18:00:54.806 INFO  1704  ---
+				[main] o.h.c.i.RegionFactoryInitiator : HHH000026: Second-level cache disabled
+2024-01-23 18:00:54.819 WARN  1717  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001002: Using built-in connection pool (not intended for production use)
+2024-01-23 18:00:54.819 INFO  1717  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2024-01-23 18:00:54.819 INFO  1717  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/gestioncomptebancaire2]
+2024-01-23 18:00:54.819 INFO  1717  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001001: Connection properties: {password=****, user=root}
+2024-01-23 18:00:54.819 INFO  1717  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001003: Autocommit mode: false
+2024-01-23 18:00:54.819 INFO  1717  ---
+				[main] o.hibernate.orm.connections.pooling : HHH10001115: Connection pool size: 20 (min=1)
+2024-01-23 18:00:54.823 WARN  1721  ---
+				[main] org.hibernate.dialect.Dialect : HHH000511: The 5.7.31 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-01-23 18:00:54.824 WARN  1722  ---
+				[main] org.hibernate.orm.deprecation : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-23 18:00:54.862 INFO  1760  ---
+				[main] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-23 18:00:54.863 INFO  1761  ---
+				[main] o.hibernate.orm.connections.access : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@638afcaa] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-23 18:00:54.871 ERROR 1769  ---
+				[main] f.d.g.a.r.UtilisateurRepository : L'utilisateur n'existe pas

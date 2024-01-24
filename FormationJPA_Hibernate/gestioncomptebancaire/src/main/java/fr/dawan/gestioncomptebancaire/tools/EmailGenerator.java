@@ -7,8 +7,12 @@ public class EmailGenerator {
 	
 	public static String generateEmail(String prefix, String suffix) {
 		emailCounter++;
+		System.out.println("dzdzdzdzd : " + emailCounter);
 		String generatedEmail = prefix.toLowerCase() + "." + suffix.toLowerCase() + emailCounter + "@gmail.com";
 		return generatedEmail;
 	}
+	
+
+
 
 }

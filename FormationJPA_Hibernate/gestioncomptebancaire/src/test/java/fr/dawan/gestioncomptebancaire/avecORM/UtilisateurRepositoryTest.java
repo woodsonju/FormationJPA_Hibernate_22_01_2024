@@ -14,36 +14,43 @@ import org.junit.jupiter.api.Test;
 
 import fr.dawan.gestioncomptebancaire.avecORM.entities.Utilisateur;
 import fr.dawan.gestioncomptebancaire.avecORM.repositories.IUtilisateurRepository;
+import fr.dawan.gestioncomptebancaire.avecORM.repositories.IUtilisateurRepositoryOld;
 import fr.dawan.gestioncomptebancaire.avecORM.repositories.UtilisateurRepository;
+import fr.dawan.gestioncomptebancaire.avecORM.repositories.UtilisateurRepositoryOld;
 import fr.dawan.gestioncomptebancaire.tools.EmailGenerator;
 
 class UtilisateurRepositoryTest {
 
 	private IUtilisateurRepository repository;
+	private IUtilisateurRepositoryOld repositoryOld;
 
 	@BeforeEach
 	void setUp() throws Exception {
 		repository = new UtilisateurRepository();
+		repositoryOld = new UtilisateurRepositoryOld();
 	}
 
 	@Test
 	void testAddUser() {
+	
 		//Créer un objet utilisateur pour le test  (Etat de l'objet : Transient)
 		Utilisateur user = new Utilisateur();
 		user.setNom("Carpentier");
 		user.setPrenom("Thomas");
+		
+		String generatedEmail1 = EmailGenerator.generateEmail(user.getNom(), user.getPrenom());
 
 		//String generatedEmail1 = EmailGenerator.generateEmail(user.getNom(), user.getPrenom());	
-		user.setEmail("Carpentier29@gmail.com");
+		user.setEmail(generatedEmail1);
 
 		//Aappeler la méthode addUser et verifier si elle fonctionne correctement 
-		repository.addUser(user);  //(Etat de l'objet : Managé)
+		repositoryOld.addUser(user);  //(Etat de l'objet : Managé)
 
 		//Récuperer l'ID de l'utilisateur 
 		Long userIdFromDb = user.getId();
 
 		//Verifier que l'utilisateur a été ajouté avec succès
-		Utilisateur userFromDB = repository.findUserById(userIdFromDb);
+		Utilisateur userFromDB = repositoryOld.findUserById(userIdFromDb);
 
 		//assurer que l'utilisateur a été correctement ajouté 
 		assertNotNull(userFromDB);
@@ -66,13 +73,13 @@ class UtilisateurRepositoryTest {
 		user.setPrenom("Jean");
 		user.setEmail("pJean.gmail.com");
 
-		repository.addUser(user);
+		repositoryOld.addUser(user);
 
 		Long userIdToDelete = user.getId();
 
-		repository.deleteUserById(userIdToDelete);
+		repositoryOld.deleteUserById(userIdToDelete);
 
-		Utilisateur userFromDb = repository.findUserById(userIdToDelete);
+		Utilisateur userFromDb = repositoryOld.findUserById(userIdToDelete);
 
 		assertNull(userFromDb);
 	}
@@ -87,7 +94,7 @@ class UtilisateurRepositoryTest {
 		String generatedEmail1 = EmailGenerator.generateEmail(user.getNom(), user.getPrenom());	
 		user.setEmail(generatedEmail1);
 
-		repository.addUser(user);
+		repositoryOld.addUser(user);
 
 		user.setNom("Dupont");
 		user.setPrenom("Marie");
@@ -98,9 +105,9 @@ class UtilisateurRepositoryTest {
 		user.setEmail(generatedEmail2);
 
 		//Mettre à jour l'utilisateur
-		repository.updateUser(user);
+		repositoryOld.updateUser(user);
 
-		Utilisateur updateUser = repository.findUserById(user.getId());
+		Utilisateur updateUser = repositoryOld.findUserById(user.getId());
 
 		assertNotNull(updateUser);
 		assertEquals("Dupont", updateUser.getNom());
@@ -110,7 +117,7 @@ class UtilisateurRepositoryTest {
 
 	@Test
 	void testGetAllUsers() {
-		List<Utilisateur> users = repository.getAllUsers();
+		List<Utilisateur> users = repositoryOld.getAllUsers();
 
 		assertNotNull(users);
 
@@ -119,7 +126,7 @@ class UtilisateurRepositoryTest {
 
 	@Test
 	void testFindAll() {
-		List<Utilisateur> users = repository.findAll(0, 2);
+		List<Utilisateur> users = repositoryOld.findAll(0, 2);
 
 		assertEquals(2, users.size());
 
@@ -138,12 +145,12 @@ class UtilisateurRepositoryTest {
 		user.setPrenom("Harne");
 		user.setEmail("lHarne60.gmail.com");
 		
-		repository.addUser(user);
+		repositoryOld.addUser(user);
 		
 		Long userId = user.getId();
 		
-		Utilisateur userFromDb1 = repository.findUserById(userId);
-		Utilisateur userFromDb2 = repository.findUserById(userId);
+		Utilisateur userFromDb1 = repositoryOld.findUserById(userId);
+		Utilisateur userFromDb2 = repositoryOld.findUserById(userId);
 		
 		assertNotNull(userFromDb1);
 		assertNotNull(userFromDb2);
@@ -155,10 +162,12 @@ class UtilisateurRepositoryTest {
 		userFromDb2.setNom("Jean Luc");
 		
 		//Sauvegarde des modifications des deux utilisateurs 
-		repository.updateUser(userFromDb1);
+		repositoryOld.updateUser(userFromDb1);
 		
-		assertThrows(Exception.class, () -> repository.updateUser(userFromDb2));
+		assertThrows(Exception.class, () -> repositoryOld.updateUser(userFromDb2));
 		
 	}
+	
+	
 
 }

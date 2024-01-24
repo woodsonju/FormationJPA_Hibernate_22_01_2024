@@ -1,16 +1,18 @@
 package fr.dawan.gestioncomptebancaire.avecORM.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Objects;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
+import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import jakarta.persistence.TableGenerator;
 import jakarta.persistence.Version;
 
 @Entity
@@ -55,6 +57,13 @@ public class Utilisateur implements Serializable{
 	@Version
 	private int version;
 	
+	//Ajouter lors de la relation @OneToOne
+	@Embedded
+	private UtilisateurDetail utilisateurDetail;
+	
+	@OneToMany(mappedBy = "client")
+	private Collection<Compte> comptes;
+	
 	public Utilisateur() {
 		super();
 	}
@@ -64,6 +73,16 @@ public class Utilisateur implements Serializable{
 		this.nom = nom;
 		this.prenom = prenom;
 		this.email = email;
+	}
+	
+	
+
+	public Utilisateur(String nom, String prenom, String email, UtilisateurDetail utilisateurDetail) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.utilisateurDetail = utilisateurDetail;
 	}
 
 	public Long getId() {
@@ -98,9 +117,21 @@ public class Utilisateur implements Serializable{
 		this.email = email;
 	}
 
+
+	
+
+	public Collection<Compte> getComptes() {
+		return comptes;
+	}
+
+	public void setComptes(Collection<Compte> comptes) {
+		this.comptes = comptes;
+	}
+
 	@Override
 	public String toString() {
-		return "Utilisateur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email + "]";
+		return "Utilisateur [nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", version=" + version
+				+ ", utilisateurDetail=" + utilisateurDetail + "]";
 	}
 
 	@Override

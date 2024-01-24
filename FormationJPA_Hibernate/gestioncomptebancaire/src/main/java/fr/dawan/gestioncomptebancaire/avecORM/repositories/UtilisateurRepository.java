@@ -5,8 +5,10 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import fr.dawan.gestioncomptebancaire.avecORM.entities.Compte;
 import fr.dawan.gestioncomptebancaire.avecORM.entities.Utilisateur;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.TypedQuery;
 
 public class UtilisateurRepository extends GenericRepository<Utilisateur, Long> implements IUtilisateurRepository{
@@ -38,6 +40,54 @@ public class UtilisateurRepository extends GenericRepository<Utilisateur, Long> 
 		}
 		
 		return users;
+	}
+
+	@Override
+	public Utilisateur findByEmail(String email) {
+		
+		Utilisateur user = null;
+		EntityManager em = createEntityManager();
+		
+		try {
+			String user_jpql_query = "SELECT u FROM Utilisateur u WHERE u.email = :email";
+			TypedQuery<Utilisateur> query = em.createQuery(user_jpql_query, Utilisateur.class);
+			query.setParameter("email", email);
+			user = query.getSingleResult();
+			logger.info("Récuperation de l'utilisateur vec succès " + user);
+		} catch (Exception e) {
+			logger.error("Erreur lors de la recuperation de l'utilisateur");
+			e.printStackTrace();
+		}finally {
+			em.close();
+		}
+		
+		return user;
+	}
+
+	@Override
+	public void saveUserWithComptes(Utilisateur user) {
+		EntityManager em = createEntityManager();
+		EntityTransaction transaction = em.getTransaction();
+		try {
+			transaction.begin();
+			
+			em.persist(user);
+			
+			//Associez les comptes à l'utilisateur 
+			for (Compte compte : user.getComptes()) {
+				compte.setClient(user);
+				em.persist(compte);
+			}
+			
+			transaction.commit();
+			logger.info("Utilisateur et comptes associés ajoutés avec succès");
+		} catch (Exception e) {
+			logger.error("Erreur lors de la recuperation de l'utilisateur");
+			transaction.rollback();
+			e.printStackTrace();
+		} finally {
+			em.close();
+		}
 	}
 
 	

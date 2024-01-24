@@ -6,6 +6,8 @@ import java.util.Objects;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Version;
 
@@ -25,6 +27,10 @@ public class Compte implements Serializable{
 	
 	private double solde;
 	
+	@ManyToOne
+	@JoinColumn(name = "CODE_CLIENT")
+	private Utilisateur client;
+	
 	public Compte() {
 	}
 
@@ -34,6 +40,16 @@ public class Compte implements Serializable{
 		this.version = version;
 		this.dateCreation = dateCreation;
 		this.solde = solde;
+	}
+	
+	
+
+	public Compte(String numCompte, LocalDate dateCreation, double solde, Utilisateur client) {
+		super();
+		this.numCompte = numCompte;
+		this.dateCreation = dateCreation;
+		this.solde = solde;
+		this.client = client;
 	}
 
 	public String getNumCompte() {
@@ -62,6 +78,16 @@ public class Compte implements Serializable{
 
 	public void setSolde(double solde) {
 		this.solde = solde;
+	}
+	
+	
+
+	public Utilisateur getClient() {
+		return client;
+	}
+
+	public void setClient(Utilisateur client) {
+		this.client = client;
 	}
 
 	@Override

@@ -1,8 +1,12 @@
 package fr.dawan.gestioncomptebancaire.avecORM;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -60,6 +64,24 @@ class CompteRepositoryTest {
 	@Test
 	void testGetAll() {
 		fail("Not yet implemented");
+	}
+	
+	@Test 
+	void testFindByDateCreation() {
+		String numCompte = RandomStringGenerator.generateRandomString();
+		Compte compte = new Compte();
+		compte.setNumCompte(numCompte);
+		compte.setSolde(35000.0);
+		
+		LocalDate dateCreation = LocalDate.of(2023, 1, 1);
+		compte.setDateCreation(dateCreation);
+		
+		repository.save(compte);
+		
+		List<Compte> comptes = repository.findByDateCreation(dateCreation);
+		
+		assertNotNull(comptes);
+		assertTrue(comptes.size() > 0);
 	}
 
 }

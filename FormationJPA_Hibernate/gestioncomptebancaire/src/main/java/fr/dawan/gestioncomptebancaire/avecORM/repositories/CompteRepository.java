@@ -1,5 +1,6 @@
 package fr.dawan.gestioncomptebancaire.avecORM.repositories;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -39,6 +40,26 @@ public class CompteRepository extends GenericRepository<Compte, String> implemen
 			em.close();
 		}
 		
+		return comptes;
+	}
+
+
+	@Override
+	public List<Compte> findByDateCreation(LocalDate date) {
+		List<Compte> comptes = null;
+		EntityManager em = createEntityManager();
+		try {
+			String user_jpql_query = "SELECT d FROM " + Compte.class.getName() + " d WHERE d.dateCreation = ?1"; 
+			TypedQuery<Compte> query = em.createQuery(user_jpql_query, Compte.class);
+			query.setParameter(1, date);
+			comptes = query.getResultList();
+			logger.info("Récuperation de la liste des comptes avec succès " + comptes);
+		}catch (Exception e) {
+			logger.error("Erreur lors de la recuperation de la liste des comptes ");
+			e.printStackTrace();
+		}finally {
+			em.close();
+		}
 		return comptes;
 	}
 

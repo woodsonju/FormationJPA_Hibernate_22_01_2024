@@ -80,7 +80,7 @@ public class UtilisateurRepository extends GenericRepository<Utilisateur, Long> 
 			}
 			
 			transaction.commit();
-			logger.info("Utilisateur et comptes associés ajoutés avec succès");
+			logger.info("Utilisateur et comptes associés ajoutés avec succès ");
 		} catch (Exception e) {
 			logger.error("Erreur lors de la recuperation de l'utilisateur");
 			transaction.rollback();
@@ -88,6 +88,26 @@ public class UtilisateurRepository extends GenericRepository<Utilisateur, Long> 
 		} finally {
 			em.close();
 		}
+	}
+
+	@Override
+	public Utilisateur findUserWithComtes(Long userId) {
+		Utilisateur utilisateur = null;
+		EntityManager em = createEntityManager();
+		try {
+			String jpql_user = "SELECT u FROM Utilisateur u JOIN FETCH u.comptes WHERE u.id = :userId";
+			TypedQuery<Utilisateur> query =  em.createQuery(jpql_user, Utilisateur.class);
+			query.setParameter("userId", userId);
+			utilisateur =  query.getSingleResult();
+			logger.info("Recuperation de l'utilisateur et comptes associés " + utilisateur);
+		} catch (Exception e) {
+			logger.error("Erreur lors de la recuperation de l'utilisateur et ses comptes");
+			e.printStackTrace();
+
+		}finally {
+			em.close();
+		}
+		return utilisateur;
 	}
 
 	

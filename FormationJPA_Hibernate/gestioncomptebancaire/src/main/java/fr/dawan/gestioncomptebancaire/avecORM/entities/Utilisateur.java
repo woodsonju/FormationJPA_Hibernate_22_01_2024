@@ -64,7 +64,7 @@ public class Utilisateur implements Serializable{
 	
 	//L'attribut mappedBy, doit référencer le champ qui porte la relation 
 	//côté entité propriétaire. C'est à dire le champs personne
-	@OneToMany(mappedBy = "client", cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "client", cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
 	private Collection<Compte> comptes;
 	
 	public Utilisateur() {
@@ -131,10 +131,12 @@ public class Utilisateur implements Serializable{
 		this.comptes = comptes;
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "Utilisateur [nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", version=" + version
-				+ ", utilisateurDetail=" + utilisateurDetail + "]";
+		return "Utilisateur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", version="
+				+ version + ", utilisateurDetail=" + utilisateurDetail + ", comptes=" + comptes + "]";
 	}
 
 	@Override

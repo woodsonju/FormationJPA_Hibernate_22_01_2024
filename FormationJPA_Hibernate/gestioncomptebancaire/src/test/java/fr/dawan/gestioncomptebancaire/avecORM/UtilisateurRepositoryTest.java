@@ -286,7 +286,7 @@ class UtilisateurRepositoryTest {
 	@Test 
 	void testFindById() {
 		UtilisateurDetail utilisateurDetail = new UtilisateurDetail("8521555", "11-12-2002", "M");
-		Utilisateur user = new Utilisateur("Laguerre", "Mateo", "mLaguerre@gmail.com", utilisateurDetail);
+		Utilisateur user = new Utilisateur("Laguerre", "Mateo", "mLaguerre355@gmail.com", utilisateurDetail);
 
 		//Generer des numeros de compte 
 		String numCompte1 = RandomStringGenerator.generateRandomString();
@@ -315,7 +315,52 @@ class UtilisateurRepositoryTest {
 		assertNotNull(user.getComptes());
 		
 		assertEquals(2, userBDD.getComptes().size());
+		
+		//Verifier que les comptes sont correctement associés à l'utilisateur 
+		for (Compte compte : comptes) {
+			assertSame(user, compte.getClient());
+		}
 
+	}
+	
+	
+	@Test 
+	void testFindUserWithComptes() {
+		UtilisateurDetail utilisateurDetail = new UtilisateurDetail("8521555", "11-12-2002", "M");
+		Utilisateur user = new Utilisateur("Laguerre", "Mateo", "mLaguerre777@gmail.com", utilisateurDetail);
+
+		//Generer des numeros de compte 
+		String numCompte1 = RandomStringGenerator.generateRandomString();
+		String numCompte2 = RandomStringGenerator.generateRandomString();
+		
+		//Créer les comptes associés 
+		Compte cb1 = new Compte(numCompte1, LocalDate.now(), 3500.0, user);
+		Compte cb2 = new Compte(numCompte2, LocalDate.of(2000, 5, 27), 68000.0, user);
+		
+		List<Compte> comptes = new ArrayList<Compte>();
+		comptes.add(cb1);
+		comptes.add(cb2);
+		
+		//Associer la liste des comptes à l'utilisateur
+		user.setComptes(comptes);
+		
+		//save l'utilisateur avec les comptes associés 
+		repository.save(user);
+		
+		//Récuperer l'tuilisateur
+		Utilisateur userBDD = repository.findUserWithComtes(user.getId());
+		
+		//Verifier que l'utilisateur a bien été ajouté
+		assertNotNull(user.getId());
+		
+		assertNotNull(user.getComptes());
+		
+		assertEquals(2, userBDD.getComptes().size());
+		
+		//Verifier que les comptes sont correctement associés à l'utilisateur 
+		for (Compte compte : comptes) {
+			assertEquals(user, compte.getClient());
+		}
 	}
 
 }

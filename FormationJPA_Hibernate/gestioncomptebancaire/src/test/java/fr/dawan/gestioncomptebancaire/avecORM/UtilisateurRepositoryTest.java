@@ -1,5 +1,6 @@
 package fr.dawan.gestioncomptebancaire.avecORM;
 
+import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -61,8 +62,11 @@ class UtilisateurRepositoryTest {
 		assertEquals(user.getEmail(), userFromDB.getEmail());
 	}
 
+	
+	
 	@Test
 	void testFindUserById() {
+		//IUtilisateurRepositoryOld
 		fail("Not yet implemented");
 	}
 
@@ -214,10 +218,10 @@ class UtilisateurRepositoryTest {
 
 	
 	@Test
-	void testSaveUserWithComptes_sansCascadePersist() {
+	void testSaveUserWithComptes_SansCascadePersist() {
 		
 		UtilisateurDetail utilisateurDetail = new UtilisateurDetail("54871656", "18-05-2012", "F");
-		Utilisateur user = new Utilisateur("Henri", "Pauline", "hPauline@gmail.com", utilisateurDetail);
+		Utilisateur user = new Utilisateur("Henri", "Pauline", "hPauline1@gmail.com", utilisateurDetail);
 		
 		//Generer des numeros de compte 
 		String numCompte1 = RandomStringGenerator.generateRandomString();
@@ -232,11 +236,86 @@ class UtilisateurRepositoryTest {
 		comptes.add(cb1);
 		comptes.add(cb2);
 		
+		//Associer la liste des comptes à l'utilisateur
 		user.setComptes(comptes);
 		
+		//Ajouter l'utilisateur avec ses comptes associées 
 		repository.saveUserWithComptes(user);
 		
+		//Verifier que l'utilisateur a bien été ajouté 
+		
 		assertNotNull(user.getId());
+	}
+	
+	@Test
+	void testSaveUserWithComptes_AvecCascadePersist() {
+		UtilisateurDetail utilisateurDetail = new UtilisateurDetail("8521555", "11-12-2002", "M");
+		Utilisateur user = new Utilisateur("Henry", "Paul", "hPaul696@gmail.com", utilisateurDetail);
+		
+		//Generer des numeros de compte 
+		String numCompte1 = RandomStringGenerator.generateRandomString();
+		String numCompte2 = RandomStringGenerator.generateRandomString();
+		
+		//Créer les comptes associés 
+		Compte cb1 = new Compte(numCompte1, LocalDate.now(), 3500.0, user);
+		Compte cb2 = new Compte(numCompte2, LocalDate.of(2000, 5, 27), 68000.0, user);
+		
+		List<Compte> comptes = new ArrayList<Compte>();
+		comptes.add(cb1);
+		comptes.add(cb2);
+		
+		//Associer la liste des comptes à l'utilisateur
+		user.setComptes(comptes);
+		
+		repository.save(user);
+		
+		//Verifier que l'utilisateur a bien été ajouté
+		assertNotNull(user.getId());
+		
+		//Verifier que les comptes ont été ajouté 
+		assertNotNull(cb1.getNumCompte());
+		assertNotNull(cb2.getNumCompte());
+		
+		//Verifier que les comptes sont associés à l'utilisateur 
+		assertSame(user, cb1.getClient());
+		assertSame(user, cb2.getClient());
+		
+	}
+	
+	
+	@Test 
+	void testFindById() {
+		UtilisateurDetail utilisateurDetail = new UtilisateurDetail("8521555", "11-12-2002", "M");
+		Utilisateur user = new Utilisateur("Laguerre", "Mateo", "mLaguerre@gmail.com", utilisateurDetail);
+
+		//Generer des numeros de compte 
+		String numCompte1 = RandomStringGenerator.generateRandomString();
+		String numCompte2 = RandomStringGenerator.generateRandomString();
+		
+		//Créer les comptes associés 
+		Compte cb1 = new Compte(numCompte1, LocalDate.now(), 3500.0, user);
+		Compte cb2 = new Compte(numCompte2, LocalDate.of(2000, 5, 27), 68000.0, user);
+		
+		List<Compte> comptes = new ArrayList<Compte>();
+		comptes.add(cb1);
+		comptes.add(cb2);
+		
+		//Associer la liste des comptes à l'utilisateur
+		user.setComptes(comptes);
+		
+		//save l'utilisateur avec les comptes associés 
+		repository.save(user);
+		
+		//Récuperer l'tuilisateur
+		Utilisateur userBDD = repository.findById(Utilisateur.class, user.getId());
+		
+		//Verifier que l'utilisateur a bien été ajouté
+		assertNotNull(user.getId());
+		
+		assertNotNull(user.getComptes());
+		
+		assertEquals(2, userBDD.getComptes().size());
+
 	}
 
 }

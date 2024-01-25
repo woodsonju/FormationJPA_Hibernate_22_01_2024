@@ -8,6 +8,7 @@ import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -61,7 +62,9 @@ public class Utilisateur implements Serializable{
 	@Embedded
 	private UtilisateurDetail utilisateurDetail;
 	
-	@OneToMany(mappedBy = "client")
+	//L'attribut mappedBy, doit référencer le champ qui porte la relation 
+	//côté entité propriétaire. C'est à dire le champs personne
+	@OneToMany(mappedBy = "client", cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
 	private Collection<Compte> comptes;
 	
 	public Utilisateur() {

@@ -16,6 +16,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import fr.dawan.gestioncomptebancaire.avecORM.entities.Compte;
+import fr.dawan.gestioncomptebancaire.avecORM.entities.Role;
 import fr.dawan.gestioncomptebancaire.avecORM.entities.Utilisateur;
 import fr.dawan.gestioncomptebancaire.avecORM.entities.UtilisateurDetail;
 import fr.dawan.gestioncomptebancaire.avecORM.repositories.IUtilisateurRepository;
@@ -362,5 +363,35 @@ class UtilisateurRepositoryTest {
 			assertEquals(user, compte.getClient());
 		}
 	}
+	
+	
+	@Test
+	void testSaveUserWithRoles() {
+		UtilisateurDetail utilisateurDetail = new UtilisateurDetail("698555", "18-10-1996", "F");
+		Utilisateur user = new Utilisateur("Laguerre", "Julie", "lJulie@gmail.com", utilisateurDetail);
+
+		
+		Role role1 = new Role("Admininstrateur");
+		Role role2 = new Role("DEV");
+		Role role3 = new Role("Tech System");
+		
+		List<Role> roles = new ArrayList<Role>();
+		roles.add(role1);
+		roles.add(role2);
+		roles.add(role3);
+		
+		user.setRoles(roles);
+		
+		repository.save(user);
+		
+		assertNotNull(user.getId());
+		
+		//Verifier que les langues ont ete ajoutées
+		assertNotNull(role1.getRoleId());
+		assertNotNull(role2.getRoleId());
+		assertNotNull(role3.getRoleId());
+		
+	}
+	
 
 }

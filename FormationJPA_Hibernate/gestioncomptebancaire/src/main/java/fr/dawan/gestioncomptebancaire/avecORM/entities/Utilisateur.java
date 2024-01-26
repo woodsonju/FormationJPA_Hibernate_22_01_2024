@@ -12,6 +12,9 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Version;
@@ -66,6 +69,19 @@ public class Utilisateur implements Serializable{
 	//côté entité propriétaire. C'est à dire le champs personne
 	@OneToMany(mappedBy = "client", cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
 	private Collection<Compte> comptes;
+	
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(
+			name="users_roles",    //Nom de la table de jointure
+			joinColumns = @JoinColumn(name = "users_id", 
+			referencedColumnName = "id"), 
+			inverseJoinColumns = @JoinColumn(name="roles_id", 
+			referencedColumnName = "roleId")  
+			)
+	private Collection<Role> roles;
+	
+	@OneToMany(mappedBy = "utilisateur")
+	private Collection<UtilisateurAdresse> utilisateurAdresseList;
 	
 	public Utilisateur() {
 		super();
@@ -132,16 +148,44 @@ public class Utilisateur implements Serializable{
 	}
 
 
-
-	@Override
-	public String toString() {
-		return "Utilisateur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", version="
-				+ version + ", utilisateurDetail=" + utilisateurDetail + ", comptes=" + comptes + "]";
+	public UtilisateurDetail getUtilisateurDetail() {
+		return utilisateurDetail;
 	}
+
+	public void setUtilisateurDetail(UtilisateurDetail utilisateurDetail) {
+		this.utilisateurDetail = utilisateurDetail;
+	}
+
+	public Collection<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(Collection<Role> roles) {
+		this.roles = roles;
+	}
+
+	public int getVersion() {
+		return version;
+	}
+
+//	@Override
+//	public String toString() {
+//		return "Utilisateur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", version="
+//				+ version + ", utilisateurDetail=" + utilisateurDetail + ", comptes=" + comptes + "]";
+//	}
+	
+	
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(email, id, nom, prenom);
+	}
+
+	@Override
+	public String toString() {
+		return "Utilisateur [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", version="
+				+ version + ", utilisateurDetail=" + utilisateurDetail + ", comptes=" + comptes + ", roles=" + roles
+				+ "]";
 	}
 
 	@Override

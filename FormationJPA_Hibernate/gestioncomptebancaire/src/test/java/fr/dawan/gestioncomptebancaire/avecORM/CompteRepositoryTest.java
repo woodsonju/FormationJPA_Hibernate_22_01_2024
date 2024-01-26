@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 
 import fr.dawan.gestioncomptebancaire.avecORM.entities.Compte;
 import fr.dawan.gestioncomptebancaire.avecORM.entities.CompteCourant;
+import fr.dawan.gestioncomptebancaire.avecORM.entities.Utilisateur;
 import fr.dawan.gestioncomptebancaire.avecORM.repositories.CompteRepository;
 import fr.dawan.gestioncomptebancaire.avecORM.repositories.ICompteRepository;
 import fr.dawan.gestioncomptebancaire.tools.RandomStringGenerator;
@@ -64,7 +65,7 @@ class CompteRepositoryTest {
 		Compte retrieveCompte = repository.findById(Compte.class, compte.getNumCompte());
 		
 		assertNotNull(retrieveCompte);
-		assertEquals(1000.0, retrieveCompte.getSolde());
+		assertEquals(6500.0, retrieveCompte.getSolde());
 	}
 
 	@Test
@@ -90,12 +91,8 @@ class CompteRepositoryTest {
 	@Test 
 	void testFindByDateCreation() {
 		String numCompte = RandomStringGenerator.generateRandomString();
-		Compte compte = new Compte();
-		compte.setNumCompte(numCompte);
-		compte.setSolde(35000.0);
-		
 		LocalDate dateCreation = LocalDate.of(2023, 1, 1);
-		compte.setDateCreation(dateCreation);
+		Compte compte = new CompteCourant(numCompte, dateCreation, 35000.0, new Utilisateur(), 500);
 		
 		repository.save(compte);
 		
@@ -103,6 +100,10 @@ class CompteRepositoryTest {
 		
 		assertNotNull(comptes);
 		assertTrue(comptes.size() > 0);
+		
+		
+		
+		
 	}
 
 }

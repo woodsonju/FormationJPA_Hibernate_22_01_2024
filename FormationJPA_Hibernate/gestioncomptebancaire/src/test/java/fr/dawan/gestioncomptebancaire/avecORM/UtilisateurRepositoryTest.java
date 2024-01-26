@@ -16,6 +16,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import fr.dawan.gestioncomptebancaire.avecORM.entities.Compte;
+import fr.dawan.gestioncomptebancaire.avecORM.entities.CompteCourant;
+import fr.dawan.gestioncomptebancaire.avecORM.entities.CompteEpargne;
 import fr.dawan.gestioncomptebancaire.avecORM.entities.Role;
 import fr.dawan.gestioncomptebancaire.avecORM.entities.Utilisateur;
 import fr.dawan.gestioncomptebancaire.avecORM.entities.UtilisateurDetail;
@@ -222,15 +224,15 @@ class UtilisateurRepositoryTest {
 	void testSaveUserWithComptes_SansCascadePersist() {
 		
 		UtilisateurDetail utilisateurDetail = new UtilisateurDetail("54871656", "18-05-2012", "F");
-		Utilisateur user = new Utilisateur("Henri", "Pauline", "hPauline1@gmail.com", utilisateurDetail);
+		Utilisateur user = new Utilisateur("Henri", "Pauline", "hPauline888@gmail.com", utilisateurDetail);
 		
 		//Generer des numeros de compte 
 		String numCompte1 = RandomStringGenerator.generateRandomString();
 		String numCompte2 = RandomStringGenerator.generateRandomString();
 		
 		//Créer les comptes associés 
-		Compte cb1 = new Compte(numCompte1, LocalDate.now(), 1000.0, user);
-		Compte cb2 = new Compte(numCompte2, LocalDate.of(2023, 9, 17), 5200.0, user);
+		Compte cb1 = new CompteCourant(numCompte1, LocalDate.now(), 1000.0, user, 300);
+		Compte cb2 = new CompteEpargne(numCompte2, LocalDate.of(2023, 9, 17), 5200.0, user, 0.7);
 		
 		//Ajouter les comptes à la liste 
 		List<Compte> comptes = new ArrayList<Compte>();
@@ -258,8 +260,8 @@ class UtilisateurRepositoryTest {
 		String numCompte2 = RandomStringGenerator.generateRandomString();
 		
 		//Créer les comptes associés 
-		Compte cb1 = new Compte(numCompte1, LocalDate.now(), 3500.0, user);
-		Compte cb2 = new Compte(numCompte2, LocalDate.of(2000, 5, 27), 68000.0, user);
+		Compte cb1 = new CompteEpargne(numCompte1, LocalDate.now(), 3500.0, user, 0.5);
+		Compte cb2 = new CompteCourant(numCompte2, LocalDate.of(2000, 5, 27), 68000.0, user, 300.0);
 		
 		List<Compte> comptes = new ArrayList<Compte>();
 		comptes.add(cb1);
@@ -294,8 +296,8 @@ class UtilisateurRepositoryTest {
 		String numCompte2 = RandomStringGenerator.generateRandomString();
 		
 		//Créer les comptes associés 
-		Compte cb1 = new Compte(numCompte1, LocalDate.now(), 3500.0, user);
-		Compte cb2 = new Compte(numCompte2, LocalDate.of(2000, 5, 27), 68000.0, user);
+		Compte cb1 = new CompteCourant(numCompte1, LocalDate.now(), 3500.0, user, 100);
+		Compte cb2 = new CompteEpargne(numCompte2, LocalDate.of(2000, 5, 27), 68000.0, user, 0.8);
 		
 		List<Compte> comptes = new ArrayList<Compte>();
 		comptes.add(cb1);
@@ -335,8 +337,8 @@ class UtilisateurRepositoryTest {
 		String numCompte2 = RandomStringGenerator.generateRandomString();
 		
 		//Créer les comptes associés 
-		Compte cb1 = new Compte(numCompte1, LocalDate.now(), 3500.0, user);
-		Compte cb2 = new Compte(numCompte2, LocalDate.of(2000, 5, 27), 68000.0, user);
+		Compte cb1 = new CompteCourant(numCompte1, LocalDate.now(), 3500.0, user, 300);
+		Compte cb2 = new CompteEpargne(numCompte2, LocalDate.of(2000, 5, 27), 68000.0, user, 0.9);
 		
 		List<Compte> comptes = new ArrayList<Compte>();
 		comptes.add(cb1);

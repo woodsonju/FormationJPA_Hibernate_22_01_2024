@@ -21,7 +21,7 @@
 
 			<!--2. Definir les propriétés Hibernate -->
 			<!-- Personnaliser le processus de génération du schéma de la base de données par Hibernate -->
-            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
             <!--Specifier le dialecte SQL correspondant au systeme de base de gestion de base de données utilisé -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
             <!-- Parametrer l'affichage des requêtes SQL générées par Hibernate dans la console -->

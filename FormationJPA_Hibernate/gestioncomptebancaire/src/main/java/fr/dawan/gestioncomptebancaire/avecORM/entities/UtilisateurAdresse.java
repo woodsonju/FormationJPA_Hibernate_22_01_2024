@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 import jakarta.persistence.Embedded;
+import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -17,7 +18,13 @@ public class UtilisateurAdresse implements Serializable{
 
 	private static final long serialVersionUID = 6365373686378208142L;
 
-	@Embedded
+	/*
+	 * L'utilisation de @EmbeddedId  indique que vous avez une clé primaire 
+	 * composite pour l'entité UtilisateurAdresse. 
+	 * Cela signifie que la clé primaire de UtilisateurAdresse 
+	 * est constituée de plusieurs colonnes provenant de l'objet UtilisateurAdressePK.
+	 */
+	@EmbeddedId
 	UtilisateurAdressePK utilisateurAdressePK;
 	
 	private LocalDate debut;

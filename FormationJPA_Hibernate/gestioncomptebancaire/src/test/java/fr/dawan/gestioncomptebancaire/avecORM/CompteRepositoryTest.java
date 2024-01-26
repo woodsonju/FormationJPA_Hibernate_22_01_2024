@@ -12,6 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import fr.dawan.gestioncomptebancaire.avecORM.entities.Compte;
+import fr.dawan.gestioncomptebancaire.avecORM.entities.CompteCourant;
 import fr.dawan.gestioncomptebancaire.avecORM.repositories.CompteRepository;
 import fr.dawan.gestioncomptebancaire.avecORM.repositories.ICompteRepository;
 import fr.dawan.gestioncomptebancaire.tools.RandomStringGenerator;
@@ -30,13 +31,33 @@ class CompteRepositoryTest {
 		fail("Not yet implemented");
 	}
 
+//	@Test
+//	void testSave() {
+//		String numCompte = RandomStringGenerator.generateRandomString();
+//		Compte compte = new Compte();
+//		compte.setNumCompte(numCompte);
+//		compte.setSolde(1000.0);
+//		compte.setDateCreation(LocalDate.now());
+//		
+//		repository.save(compte);
+//		
+//		Compte retrieveCompte = repository.findById(Compte.class, compte.getNumCompte());
+//		
+//		assertNotNull(retrieveCompte);
+//		assertEquals(1000.0, retrieveCompte.getSolde());
+//	}
+	
+
+	//Tester avec compte courant
 	@Test
 	void testSave() {
 		String numCompte = RandomStringGenerator.generateRandomString();
-		Compte compte = new Compte();
+		Compte compte = new CompteCourant();
+		
 		compte.setNumCompte(numCompte);
-		compte.setSolde(1000.0);
+		compte.setSolde(6500.0);
 		compte.setDateCreation(LocalDate.now());
+		
 		
 		repository.save(compte);
 		

@@ -4,8 +4,12 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
+import jakarta.persistence.DiscriminatorColumn;
+import jakarta.persistence.DiscriminatorType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
@@ -13,7 +17,10 @@ import jakarta.persistence.Version;
 
 @Entity
 @Table(name = "t_bankAccount")
-public class Compte implements Serializable{
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "TYPE_CPTE",  
+discriminatorType = DiscriminatorType.STRING, length = 2)
+public abstract class Compte implements Serializable{
 
 	private static final long serialVersionUID = -1348168111892974333L;
 
